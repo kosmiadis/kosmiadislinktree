@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$bg-color: rgb(97, 76, 155);
+$box-bg-color: rgb(192, 195, 219);
+$font-color: $bg-color;
+$box-border-color: rgb(78, 61, 122);
+$name-color: $box-bg-color;
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e5e5f7;
+    box-sizing: border-box;
+    * {
+        color: $font-color;
+        transition: 0.2s;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    
+}
+
+div.content {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    div.title {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        
+        
+        p {
+            font-size: 1.5rem;
+            color: $font-color;  
+            font-weight:900;
+            margin: 0;
+        }
+        
+        img {
+            width: 62px;
+            border-radius: 50%;
+        }
+        
+    }
+
+    div.links-container {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+
+        a.box-link {
+            padding: 1rem;
+            display: flex;
+            background-color: $box-bg-color;
+            
+            div.link-box {
+                background-color: transparent;
+                display: flex;
+                width: 100%;
+                p {
+                    width: 100%;
+                    text-align: center;
+                    color:$font-color;
+                }
+                
+            }
+
+            &:hover {
+                background-color: $bg-color;
+
+                div.link-box {
+
+                    p {
+                        color: $box-bg-color;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+
+    div.modestone-video-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        video {
+            margin: 0;
+            width: 80%;
+           
+        }
+
+        div.modestone-title {
+            text-align: center;
+
+            p:nth-of-type(1) {
+                font-size: 1.3rem;
+             
+            }
+
+            p:nth-of-type(2) {
+                font-size: 1rem;
+                
+            }
+            
+        }
+    }
+}
+
